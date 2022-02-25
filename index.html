@@ -8,7 +8,7 @@
       <!-- assets for use in scene-->
       <a-assets>
         <img id="linkedInIcon" src="https://raw.githubusercontent.com/Garrison-Shoemake/business-card/master/images/linkedin-logo-3.png"/>
-        <img id="gitHubIcon" src="https://raw.githubusercontent.com/Garrison-Shoemake/business-card/master/images/whitegithub.png"/>
+        <img id="gitHubIcon" src="https://raw.githubusercontent.com/Garrison-Shoemake/business-card/master/images/publicgithub.png"/>
       </a-assets>
 
       <!-- pretty sky!(box), will eventually be in world space through ar.js-->
@@ -19,17 +19,6 @@
         <a-gui-cursor id="cursor" raycaster="objects: [gui-interactable]" fuse="false" color="#FF9D00" position="0 0 -1"></a-gui-cursor>
       </a-camera>
       
-      <!-- Linkedin Icon-->
-      <a-entity
-        id="LinkedInLink"
-        geometry="primitive: plane"
-        gui-interactable
-        position="-3 1 -2"
-        rotation="0 51 0"
-        material="src: #linkedInIcon; alphaTest: 1"
-        onclick="location.href='https://www.linkedin.com/in/garrison-shoemake/'"
-      ></a-entity>
-
       <!-- Github Icon-->
       <a-entity
         id="GitHubLink"
@@ -37,12 +26,21 @@
         gui-interactable
         position="0 1 -2"
         rotation="0 0 0"
-        material="src: #gitHubInIcon; alphaTest: 1"
+        material="src: #gitHubIcon; alphaTest: 0.5"
         onclick="location.href='https://github.com/Garrison-Shoemake'"
+      ></a-entity>
+      
+      <!-- Linkedin Icon-->
+      <a-entity
+        id="LinkedInLink"
+        geometry="primitive: plane"
+        gui-interactable
+        position="-3 1 -2"
+        rotation="0 51 0"
+        material="src: #linkedInIcon; alphaTest: 0.5"
+        onclick="location.href='https://www.linkedin.com/in/garrison-shoemake/'"
       ></a-entity>
 
       </a-scene>
   </body>
 </html>
-
-
