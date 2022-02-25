@@ -5,23 +5,31 @@
   </head>
   <body>
     <a-scene gui-env>
+      <a-assets>
+        <img id="linkedInIcon" src="https://raw.githubusercontent.com/Garrison-Shoemake/business-card/master/images/linkedin-logo-3.png">
+      </a-assets>
+
       <a-sky src="https://raw.githubusercontent.com/Garrison-Shoemake/business-card/master/images/starysky2.jpg"></a-sky>
+
       <a-camera>
-        <a-gui-cursor id="cursor" raycaster="objects: [gui-interactable]" fuse="false" color="#FF9D00" position="0 0 -1"></a-gui-cursor>
+        <a-gui-cursor id="cursor" fuse="false" color="#FF9D00" position="0 0 -1"></a-gui-cursor>
       </a-camera>
+      
       <a-entity
-        id="linkedInIcon"
-        material="src: https://raw.githubusercontent.com/Garrison-Shoemake/business-card/master/images/linkedin-logo-3.png"
+        geometry
+        position="0 1 -3.5"
+        material="src: #linkedInIcon"
         onclick="location.href='https://www.linkedin.com/in/garrison-shoemake/'"
       >
       </a-entity>
+
       <!-- the following commented out section is for reference to a gui element that had not worked-->
-      <!-- <a-gui-icon-button 
+      <a-gui-icon-button 
         icon-font="https://raw.githubusercontent.com/Garrison-Shoemake/business-card/master/images/linkedin-logo-3.png"
         position="0 1 -3.5"
         role="button"
         onclick="location.href='https://www.linkedin.com/in/garrison-shoemake/'">
-        </a-gui-icon-button> -->
+        </a-gui-icon-button>
       </a-scene>
   </body>
 </html>
