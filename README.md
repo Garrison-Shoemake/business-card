@@ -27,6 +27,7 @@ For this project, using WebXR meant using HTML, a language I'm not too familiar 
 ## To-do List:
 - [x] Add GitHub Icon
 - [x] Add LinkedIn Icon 
+- [x] Implement AR Recognition on User Device
 - [ ] Add Twitter Icon
 - [ ] Implement Image Recognition
 - [ ] Test for Quest Headset
